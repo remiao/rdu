@@ -1,0 +1,245 @@
+*{
+	box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.rdu{
+	font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	line-height: 45px;
+	margin: 0 0 30px 0;
+	vertical-align: top;
+	width: 100%;
+}
+
+.rdu a{
+	background: rgb(255,255,255);
+	color: rgb(0,0,0);
+	overflow: hidden;
+	text-decoration: none;
+	display: block;
+	height: 100%;
+	padding: 0 15px;
+	position: relative;
+	transition: .2s ease color, .2s ease background;
+		-moz-transition: .2s ease color, .2s ease background;
+		-ms-transition: .2s ease color, .2s ease background;
+		-webkit-transition: .2s ease color, .2s ease background;
+	width: 100%;
+}
+
+.rdu a:hover,.rduSelectedElement a{color: rgb(60,135,255);}
+
+/* Drop down lists */
+
+.rduSelector{
+	margin: 0;
+	position: relative;
+	z-index: 1000;
+}
+
+.rduSelector a{
+	border: 1px solid rgb(230,230,230);
+	transform-origin: 50% top;
+		-moz-transform-origin: 50% top;
+		-ms-transform-origin: 50% top;
+		-webkit-transform-origin: 50% top;
+	transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+		-moz-transition: .22s ease -moz-transform, .22s ease box-shadow, .2s ease color;
+		-ms-transition: .22s ease -ms-transform, .22s ease box-shadow, .2s ease color;
+		-webkit-transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+
+}
+
+.rduList{
+	display: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+.rduList li{
+	border: 1px solid rgb(230,230,230);
+	border-bottom: 0;
+	height: 45px;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.rduList li:last-child{border-bottom: 1px solid rgba(0,0,0,.1);}
+
+.rduSelectorSelected a{
+	box-shadow: rgba(0,0,0,.2) 0 20px 20px;
+	transform: perspective(290px) rotateX(40deg);
+		-moz-transform: perspective(290px) rotateX(40deg);
+		-ms-transform: perspective(290px) rotateX(40deg);
+		-webkit-transform: perspective(290px) rotateX(40deg);
+		
+}
+
+/* Buttons */
+
+.rduButton a{
+	border: 1px solid rgb(230,230,230);
+	transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+		-moz-transition: .22s ease -moz-transform, .22s ease box-shadow, .2s ease color;
+		-ms-transition: .22s ease -ms-transform, .22s ease box-shadow, .2s ease color;
+		-webkit-transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+}
+
+.rduButton a:active{
+	box-shadow: rgba(0,0,0,.05) 0 0 10px;
+	transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		-webkit-transform: scale(0.95);
+}
+
+/* Icons */
+
+.rduSelectorIcon,
+.rdListButtonIcon,
+.rduButtonIcon,
+.rduSelectorCounter,
+.rduSelectorIconClose{
+	background: rgb(60,135,255);
+	color: rgb(255,255,255);
+	line-height: 45px;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	width: 45px;
+}
+
+.rduSelectorIconClose{
+/* 	background: rgb(255,110,25); */
+	display: none;
+}
+
+.rduSelectorCounter{
+	display: none;
+	height: 23px;
+	line-height: 23px;
+	right: 55px;
+	top: 11px;
+	width: 23px;
+}
+
+/* Form */
+
+.rduSearch{font-size: 0; margin-right: 0;}
+
+.rduSearch p{margin: 0;}
+
+.rduSearchField{
+	appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-webkit-appearance: none;
+	background: rgb(60,135,255);
+	background: rgb(255,255,255);
+	border: 1px solid rgb(230,230,230);
+	border-radius: 0;
+	font: 16px/45px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 45px;
+	padding: 0 10px;
+	transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+		-moz-transition: .22s ease -moz-transform, .22s ease box-shadow, .2s ease color;
+		-ms-transition: .22s ease -ms-transform, .22s ease box-shadow, .2s ease color;
+		-webkit-transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+	width: 185px;	
+}
+
+.rduSearchField:focus{
+	box-shadow: rgba(0,0,0,.05) 0 5px 5px;
+	transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.025);
+}
+
+.rduSearchButton{
+	background: rgb(60,135,255);
+	border: 0;
+	color: rgb(255,255,255);
+	font: 16px/45px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0 0 0 10px;
+	padding: 0;
+	transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+		-moz-transition: .22s ease -moz-transform, .22s ease box-shadow, .2s ease color;
+		-ms-transition: .22s ease -ms-transform, .22s ease box-shadow, .2s ease color;
+		-webkit-transition: .22s ease -webkit-transform, .22s ease box-shadow, .2s ease color;
+	width: 45px;
+}
+
+.rduSearchButton:active{
+	box-shadow: rgba(0,0,0,.05) 0 0 10px;
+	transform: scale(0.95);
+		-moz-transform: scale(0.95);
+		-ms-transform: scale(0.95);
+		-webkit-transform: scale(0.95);	
+}
+
+.rdu{
+	margin: 30px auto;
+	width: 75%;
+}
+
+/* Main menu */
+
+.rduMainMenu{
+	border: 1px solid rgb(230,230,230);
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.rduMainMenu li{
+	display: inline-block;
+}
+
+.rduMainMenu a{
+	background: rgb(60,135,255);
+	color: rgb(255,255,255);
+	display: block;
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+	transition: .22s ease -webkit-transform, .22s ease box-shadow;
+		-moz-transition: .22s ease -moz-transform, .22s ease box-shadow;
+		-ms-transition: .22s ease -ms-transform, .22s ease box-shadow;
+		-webkit-transition: .22s ease ease -webkit-transform, .22s ease ease box-shadow;
+	width: 90px;
+}
+
+.rduMainMenu a:hover{
+	background: rgb(50,125,245);
+	color: rgb(255,255,255);
+	position: relative;
+}
+
+.rduMainMenu a.rduMainMenuSelected {
+	background: rgb(50,125,245);
+	box-shadow: rgba(0,0,0,.1) 0 0 10px;
+	transform: scale(1.2);
+		-moz-transform: scale(1.2);
+		-ms-transform: scale(1.2);
+		-webkit-transform: scale(1.2);	
+	z-index: 1;
+}
+
+.rduMainMenu a.rduMainMenuMultipleSelected{
+	background: rgb(50,125,245);
+	box-shadow: rgba(0,0,0,.1) 0 0 10px;
+}

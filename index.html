@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/rdu.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/rdu.js"></script> 
+	<title>Remi André Olsens Portefølje</title>
+</head>
+<body id="bodyHeader">
+<section style="margin: 0 auto; width: 700px;">
+
+	<div class="rdu" id="myFilter">
+		<p class="rduSelector">
+			<a href="javascript:void(0);">
+				Multiple Choices
+			</a>
+		</p>	
+		<ul class="rduList">
+			<li>
+				<a href="javascript:void(0);">
+					Choice 1
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					Choice 2
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					Choice 3
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="rdu" id="myFilter2" data-list-type="singlelist">
+		<p class="rduSelector">
+			<a href="javascript:void(0);">
+				Single Choice
+			</a>
+		</p>	
+		<ul class="rduList">
+			<li>
+				<a href="javascript:void(0);">
+					Choice 1
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					Choice 2
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					Choice 3
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="rdu rduButton" id="login">
+		<a href="javascript:void(0);" onclick="alert('Execute code in JS');">
+			A button
+			<span class="fa fa-user rduButtonIcon"></span>
+		</a>
+	</div>
+	
+	<div class="rdu" id="myMenu" data-list-type="mainmenu" data-list-multiple="0" data-active-buttons="1">	
+		<p>Navigation menu</p>
+		<ul class="rduMainMenu">
+			<li>
+				<a href="javascript:void(0);">
+					<span class="fa fa-user"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<span class="fa fa-tags"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<span class="fa fa-shopping-cart"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<span class="fa fa-gear"></span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<table class="rdu" id="toggle" data-list-type="mainmenu" data-list-no-choices="1">	
+		<tr>
+			<td style="width: 220px; font-size: 19px;"><q>Radio buttons</q>:</td>
+			<td>
+				<ul class="rduMainMenu">
+					<li>
+						<a href="javascript:void(0);" class="rduMainMenuSelected">
+							Yes
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							No
+						</a>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+
+</section>
+
+</body>
+</html>
